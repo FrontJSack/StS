@@ -9,16 +9,34 @@ body {
 
 a {
   text-decoration: none;
-  color: #5A030E;
+  color: #D5B189;
 }
 
 a:hover {
-  color: #D5B189;
+  color: #5A030E;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Scrollbar
+--------------------------------------------------------------*/
+
+body::-webkit-scrollbar {
+  width: 17px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #37364B;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #D5B189;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 4px solid #37364B;  /* creates padding around scroll thumb */
 }
 
 /*--------------------------------------------------------------
@@ -45,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #2194f7;
+  background: #5A030E;
   color: #fff;
 }
 
@@ -1028,14 +1046,18 @@ section {
   padding: 50px 40px;
   border-radius: 6px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 .services .icon-box i {
   float: left;
-  color: #f6b024;
+  color: #D5B189;
   font-size: 40px;
-  line-height: 0;
+  line-height: 2;
+}
+
+.services .icon-box i:hover {
+  color: #5A030E;
 }
 
 .services .icon-box h4 {
@@ -1046,7 +1068,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #05579e;
+  color: #5A030E;
   transition: 0.3s;
 }
 
@@ -1060,6 +1082,7 @@ section {
   font-size: 14px;
   margin-bottom: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Cta
@@ -1092,12 +1115,13 @@ section {
   transition: 0.5s;
   margin: 10px;
   border-radius: 50px;
-  border: 2px solid #f6b024;
+  border: 2px solid #D5B189;
   color: #fff;
 }
 
 .cta .cta-btn:hover {
-  background: #f6b024;
+  border: 2px solid #D5B189;
+  background: #37364B;
 }
 
 @media (max-width: 1024px) {
@@ -1271,290 +1295,6 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
-
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team .member {
-  position: relative;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border-radius: 10px;
-  background: #fff;
-}
-
-.team .member .pic {
-  overflow: hidden;
-  width: 180px;
-  border-radius: 50%;
-}
-
-.team .member .pic img {
-  transition: ease-in-out 0.3s;
-}
-
-.team .member:hover img {
-  transform: scale(1.1);
-}
-
-.team .member .member-info {
-  padding-left: 30px;
-}
-
-.team .member h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #05579e;
-}
-
-.team .member span {
-  display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-  font-weight: 500;
-}
-
-.team .member span::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #bfe0fd;
-  bottom: 0;
-  left: 0;
-}
-
-.team .member p {
-  margin: 10px 0 0 0;
-  font-size: 14px;
-}
-
-.team .member .social {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.team .member .social a {
-  transition: ease-in-out 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  width: 32px;
-  height: 32px;
-  background: #ecf6fe;
-  color: #0665b7;
-}
-
-.team .member .social a i {
-  font-size: 16px;
-  margin: 0 2px;
-}
-
-.team .member .social a:hover {
-  background: #D5B189;
-  color: #fff;
-}
-
-.team .member .social a + a {
-  margin-left: 8px;
-}
-
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.pricing h3 {
-  font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #05579e;
-  background: #f8f8f8;
-}
-
-.pricing h4 {
-  font-size: 36px;
-  color: #D5B189;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing ul li {
-  padding-bottom: 16px;
-}
-
-.pricing ul i {
-  color: #D5B189;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.pricing .btn-buy {
-  background: #D5B189;
-  display: inline-block;
-  padding: 8px 35px 10px 35px;
-  border-radius: 50px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricing .btn-buy:hover {
-  background: #2b99f8;
-}
-
-.pricing .featured h3 {
-  color: #fff;
-  background: #D5B189;
-}
-
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #D5B189;
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
-.faq .faq-list {
-  padding: 0 100px;
-}
-
-.faq .faq-list ul {
-  padding: 0;
-  list-style: none;
-}
-
-.faq .faq-list li + li {
-  margin-top: 15px;
-}
-
-.faq .faq-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-  position: relative;
-}
-
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 30px;
-  outline: none;
-  cursor: pointer;
-}
-
-.faq .faq-list .icon-help {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
-  color: #75bdfa;
-}
-
-.faq .faq-list .icon-show, .faq .faq-list .icon-close {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list a.collapsed {
-  color: #343a40;
-}
-
-.faq .faq-list a.collapsed:hover {
-  color: #D5B189;
-}
-
-.faq .faq-list a.collapsed .icon-show {
-  display: inline-block;
-}
-
-.faq .faq-list a.collapsed .icon-close {
-  display: none;
-}
-
-@media (max-width: 1200px) {
-  .faq .faq-list {
-    padding: 0;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -2180,10 +1920,11 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #5A030E;
+  background: #37364B;
   padding: 0 0 30px 0;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 #footer .footer-top {
@@ -2206,6 +1947,7 @@ section {
 #footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
+  font-weight: 400;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -2227,7 +1969,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f6b024;
+  background: #007bff;
   color: #fff;
   text-decoration: none;
 }
@@ -2253,7 +1995,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #5db1f9;
+  color: #D5B189;
   font-size: 18px;
   line-height: 1;
 }
