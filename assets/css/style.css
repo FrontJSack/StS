@@ -552,7 +552,7 @@ body::-webkit-scrollbar-thumb {
   height: 80vh;
   overflow: hidden;
   position: relative;
-  background: url("../img/sts-landing-min.webp") top center;
+  background: url("../img/sts-landing-min.png") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -759,7 +759,7 @@ section {
 --------------------------------------------------------------*/
 .about {
   padding: 140px 0;
-  background: url("../img/sts-about\ \(1\)-min.webp") top right no-repeat;
+  background: url("../img/sts-about\ \(1\)-min.png") top right no-repeat;
   position: relative;
 }
 
@@ -1088,7 +1088,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(27, 27, 27, 0.65)), url("../img/sts-cta-min.webp") fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(27, 27, 27, 0.65)), url("../img/sts-cta-min.png") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
@@ -1301,7 +1301,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  background: url("../img/contact-bg.webp") left center no-repeat;
+  background: url("../img/contact-bg.png") left center no-repeat;
   position: relative;
 }
 
